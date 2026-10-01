@@ -1,2 +1,52 @@
-# Javascript-Projects
-🚀 JavaScript Learning &amp; Projects — A collection of my JavaScript learning journey, practice exercises, DOM projects, and real-world mini projects. Built while learning JavaScript fundamentals, DOM manipulation, events, functions, arrays, objects, and modern web development.
+# 🚀 JavaScript Learning & Projects
+
+This repository contains my JavaScript learning journey, practice exercises, and projects as I learn and improve my web development skills.
+
+## 📚 What I'm Learning
+
+- JavaScript Fundamentals
+- Variables & Data Types
+- Functions
+- Arrays & Objects
+- Loops & Control Flow
+- DOM Manipulation
+- DOM Events
+- Event Listeners
+- ES6+ Concepts
+- Interactive Web Development
+
+## 🛠️ Projects
+
+- 🎨 Color Changer
+- 🧮 Calculator
+- 🖱️ DOM & Event-Based Projects
+- 🎯 JavaScript Practice Projects
+- 🚀 More projects coming soon...
+
+## 🎯 My Approach
+
+I'm learning JavaScript by **building projects and solving problems**, rather than focusing only on theory.
+
+> Learn → Build → Debug → Improve 🚀
+
+## 📈 What's Next
+
+I'm continuing toward:
+
+**JavaScript → React.js → Backend → Full Stack Development**
+
+---
+
+### 👨‍💻 About Me
+
+**Hemant Wadhwa**
+
+AI/ML + Full Stack Developer in learning phase.
+
+- 💻 C++ & DSA
+- 🌐 JavaScript & React.js
+- 🤖 AI/ML
+- 🚀 Real-world Projects
+- 🧩 Open Source & Hackathons
+
+**Keep coding. Keep building. 🔥**
