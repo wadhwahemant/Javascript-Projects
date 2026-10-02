@@ -53,3 +53,4 @@ AI/ML + Full Stack Developer in learning phase.
 
 
 * Live Demo of Project 1 i.e Color Changer -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/colorChanger/)
+* Live Demo of Project 2 i.e BMI Calculator -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/bmiCalculator/)
