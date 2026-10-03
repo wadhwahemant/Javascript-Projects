@@ -58,4 +58,5 @@ AI/ML + Full Stack Developer in learning phase.
 * Live Demo of Project 4 i.e Digital Clock -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/digitalClock/)
 * Live Demo of Project 5 i.e Classical Clock -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/classicalClock/)
 * Live Demo of Project 6 i.e Character Count -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/characterCount/)
+* Live Demo of Project 7 i.e Bill Calculator -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/billCalculator/)
 
