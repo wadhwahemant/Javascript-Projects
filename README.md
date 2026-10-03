@@ -56,4 +56,6 @@ AI/ML + Full Stack Developer in learning phase.
 * Live Demo of Project 2 i.e BMI Calculator -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/bmiCalculator/)
 * Live Demo of Project 3 i.e Rectangle Area Calculator -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/rectangleArea/)
 * Live Demo of Project 4 i.e Digital Clock -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/digitalClock/)
-* Live Demo of Project 5 i.e CLassical Clock -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/classicalClock/)
+* Live Demo of Project 5 i.e Classical Clock -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/classicalClock/)
+* Live Demo of Project 6 i.e Character Count -[Click Here](https://wadhwahemant.github.io/Javascript-Projects/characterCount/)
+
