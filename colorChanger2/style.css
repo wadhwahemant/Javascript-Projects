@@ -1,0 +1,258 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0f172a;
+    color: white;
+
+    transition: background-color 0.5s ease;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   BACKGROUND EFFECT
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    top: -150px;
+    left: -150px;
+
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    bottom: -150px;
+    right: -150px;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   COLOR PALETTE
+========================= */
+
+.colorPalette {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+
+    animation: appear 0.8s ease;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.color {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    border: none;
+    border-radius: 20px;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+
+    overflow: hidden;
+}
+
+
+/* Shine effect */
+
+.color::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.5s ease;
+}
+
+.color:hover::before {
+    left: 130%;
+}
+
+
+/* =========================
+   INDIVIDUAL COLORS
+========================= */
+
+#red {
+    background: linear-gradient(135deg, #ff4b4b, #c91818);
+
+    box-shadow:
+        0 10px 25px rgba(255, 0, 0, 0.35);
+}
+
+#blue {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+
+    box-shadow:
+        0 10px 25px rgba(0, 100, 255, 0.35);
+}
+
+#yellow {
+    background: linear-gradient(135deg, #facc15, #eab308);
+
+    color: #111827;
+
+    box-shadow:
+        0 10px 25px rgba(250, 204, 21, 0.35);
+}
+
+#green {
+    background: linear-gradient(135deg, #22c55e, #15803d);
+
+    box-shadow:
+        0 10px 25px rgba(34, 197, 94, 0.35);
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.color:hover {
+    transform: translateY(-10px) scale(1.05);
+
+    filter: brightness(1.1);
+}
+
+
+/* =========================
+   CLICK
+========================= */
+
+.color:active {
+    transform: translateY(-3px) scale(0.96);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .colorPalette {
+        width: 90%;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+
+        padding: 25px;
+    }
+
+    .color {
+        width: 100%;
+        height: 90px;
+    }
+
+}

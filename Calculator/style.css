@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Deep dark slate background */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+}
+
+/* Dark Glassmorphism Container */
+.calculator {
+    width: 350px;
+    background: rgba(15, 20, 30, 0.6); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 255, 255, 0.2); /* Neon Cyan border */
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
+    padding: 25px;
+}
+
+/* Display Section */
+.display {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid rgba(255, 0, 127, 0.2); /* Neon Pink hint */
+}
+
+.previous-operand {
+    color: #ff007f; /* Contrasting Neon Pink */
+    font-size: 1.2rem;
+    min-height: 24px;
+}
+
+.current-operand {
+    color: #00ffff; /* Contrasting Neon Cyan */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Button Grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Individual Buttons */
+.btn {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover and Click Effects */
+.btn:hover {
+    background: rgba(0, 255, 255, 0.15);
+    color: #00ffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+/* Special Buttons */
+.span-two {
+    grid-column: span 2;
+}
+
+/* Operator Buttons - Pink Contrast */
+.operator {
+    background: rgba(255, 0, 127, 0.1); 
+    border: 1px solid rgba(255, 0, 127, 0.3);
+    font-weight: bold;
+    color: #ff007f;
+}
+
+.operator:hover {
+    background: rgba(255, 0, 127, 0.25);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.3);
+}
+
+/* Equals Button - Cyan Contrast */
+.equals {
+    background: rgba(0, 255, 255, 0.2);
+    color: #00ffff;
+    font-weight: bold;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.equals:hover {
+    background: #00ffff;
+    color: #0f2027; /* Dark text on hover for maximum contrast */
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.6);
+}

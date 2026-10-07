@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>TaskFlow — To-Do List</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+
+<main class="app">
+
+    <section class="todo-card">
+
+        <header class="todo-header">
+            <div>
+                <p class="eyebrow">MY PRODUCTIVITY</p>
+                <h1>Task<span>Flow</span></h1>
+                <p class="subtitle">Organize your day. Get things done.</p>
+            </div>
+
+            <div class="task-count">
+                <span id="taskCount">0</span>
+                <small>Tasks</small>
+            </div>
+        </header>
+
+
+        <div class="input-area">
+
+            <input 
+                type="text" 
+                id="taskInput"
+                placeholder="What needs to be done?"
+                autocomplete="off"
+            >
+
+            <button id="addTask">
+                <span>+</span>
+                Add Task
+            </button>
+
+        </div>
+
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter" data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+
+        <div class="task-container">
+
+            <ul id="taskList">
+                <!-- JavaScript will add tasks here -->
+            </ul>
+
+            <div class="empty-state" id="emptyState">
+
+                <div class="empty-icon">
+                    ✓
+                </div>
+
+                <h2>No tasks yet</h2>
+
+                <p>
+                    Add your first task and start being productive.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <footer class="todo-footer">
+
+            <p>
+                <span id="remainingTasks">0</span> tasks remaining
+            </p>
+
+            <button id="clearCompleted">
+                Clear completed
+            </button>
+
+        </footer>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
