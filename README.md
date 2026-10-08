@@ -23,7 +23,7 @@ Below is the list of all JavaScript projects included in this repository, along 
 | 11 | **rectangeArea** | Rectangle area calculation tool | [Live Demo](https://wadhwahemant.github.io/Javascript-Projects/rectangeArea/) |
 | 12 | **temperatureConverter** | Temperature unit converter (Celsius / Fahrenheit) | [Live Demo](https://wadhwahemant.github.io/Javascript-Projects/temperatureConverter/) |
 | 13 | **toDoList** | Dynamic To-Do List web app | [Live Demo](https://wadhwahemant.github.io/Javascript-Projects/toDoList/) |
-
+| 14 | **guessTheNumber** | Guess Number Game | *In Progress* |
 ---
 
 ## 🛠️ Tech Stack Used
